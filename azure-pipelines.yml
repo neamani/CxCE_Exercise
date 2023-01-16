@@ -17,6 +17,6 @@ steps:
     projectName: '$(Build.Repository.Name)'
     branchName: '$(Build.SourceBranchName)'
     tenantName: 'cx_emea_se_ido_neamani'
-    additionalParams: '--sast-preset-name "ASA Premium" --threshold sast-high=20;sast-medium=20;sca-high=0' 
+    additionalParams: '--sast-preset-name "ASA Premium" --threshold sast-high=20;sast-medium=20;sca-high=0 --debug'
 
 
