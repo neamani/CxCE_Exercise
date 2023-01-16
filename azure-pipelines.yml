@@ -13,7 +13,7 @@ steps:
 
 - task: Checkmarx AST@2
   inputs:
-    CheckmarxService: 'ast_service_connection'
+    CheckmarxService: 'ast_service_connection_2'
     projectName: '$(Build.Repository.Name)'
     branchName: '$(Build.SourceBranchName)'
     tenantName: 'cx_emea_se_ido_neamani'
