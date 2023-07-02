@@ -25,9 +25,10 @@ namespace CxCE_Demo
             SqlCommand cmd = new SqlCommand();
             SqlDataReader reader;
 
-            cmd.CommandText = "SELECT NAME FROM Users WHERE ID = " + ID;
+            cmd.CommandText = "SELECT NAME FROM Users WHERE ID = @ID";
             cmd.CommandType = CommandType.Text;
             cmd.Connection = conn;
+            cmd.Parameters.AddWithValue("@ID", ID);
 
             conn.Open();
 
